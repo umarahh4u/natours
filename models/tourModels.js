@@ -178,11 +178,11 @@ toursSchema.pre(/^find/, function (next) {
 });
 
 // eslint-disable-next-line prefer-arrow-callback
-toursSchema.post(/^find/, function (docs, next) {
-  console.log(`Query took ${Date.now() - this.start} milliseconds!`);
-  //console.log(docs);
-  next();
-});
+// toursSchema.post(/^find/, function (docs, next) {
+//   console.log(`Query took ${Date.now() - this.start} milliseconds!`);
+//   //console.log(docs);
+//   next();
+// });
 
 toursSchema.pre(/^find/, function (next) {
   this.populate({
